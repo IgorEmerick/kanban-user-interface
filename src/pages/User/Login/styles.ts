@@ -1,17 +1,5 @@
 import styled from 'styled-components';
 
-export const LoginContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #242424;
-
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-`;
-
 export const LoginDiv = styled.div`
   width: 20rem;
   height: 21.5625rem;

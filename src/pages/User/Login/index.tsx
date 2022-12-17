@@ -1,7 +1,7 @@
+import { EmptyContainer } from '../../../Components/EmptyContainer';
 import {
   InputLabel,
   InputDiv,
-  LoginContainer,
   LoginDiv,
   Title,
   Input,
@@ -11,7 +11,7 @@ import {
 
 export function Login(): JSX.Element {
   return (
-    <LoginContainer>
+    <EmptyContainer>
       <LoginDiv>
         <Title>Kanban Board</Title>
 
@@ -31,6 +31,6 @@ export function Login(): JSX.Element {
 
         <CreateAccountLink>create account</CreateAccountLink>
       </LoginDiv>
-    </LoginContainer>
+    </EmptyContainer>
   );
 }
