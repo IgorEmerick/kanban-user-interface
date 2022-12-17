@@ -46,8 +46,6 @@ export const InputDiv = styled.div<IInputDivProps>`
 `;
 
 export const InputLabel = styled.span`
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -65,8 +63,6 @@ export const Input = styled.input`
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.3125rem;
@@ -84,8 +80,6 @@ export const LoginButton = styled.button`
   align-items: center;
   background: #0c8500;
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.125rem;
@@ -97,8 +91,6 @@ export const LoginButton = styled.button`
 export const CreateAccountLink = styled.a`
   margin-top: 1.1875rem;
 
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.125rem;
