@@ -32,41 +32,77 @@ export const Title = styled.h1`
   color: #798d77;
 `;
 
-export const EmailLabel = styled.h2`
-  width: 17.5rem;
-  margin-top: 2.4375rem;
+interface IInputDivProps {
+  margin_top: string;
+}
 
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-  color: #042e00;
-  text-align: left;
+export const InputDiv = styled.div<IInputDivProps>`
+  height: 3.75rem;
+  margin-top: ${props => props.margin_top};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 `;
 
-export const PasswordLabel = styled.h2`
-  width: 17.5rem;
-  margin-top: 0.875rem;
-
+export const InputLabel = styled.span`
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.875rem;
   color: #042e00;
-  text-align: left;
 `;
 
 export const Input = styled.input`
   width: 17.5rem;
   height: 1.5rem;
-  margin-top: 0.375rem;
   border: 0.0625rem solid #546053;
   border-radius: 0.3125rem;
-  padding-left: 0.375rem;
-  padding-right: 0.375rem;
-  background: #ffffff;
+  display: flex;
   align-items: center;
+  padding-right: 0.375rem;
+  padding-left: 0.375rem;
 
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.3125rem;
   color: #042900;
+`;
+
+export const LoginButton = styled.button`
+  width: 6.25rem;
+  height: 1.875rem;
+  margin-top: 1.3125rem;
+  border: none;
+  border-radius: 0.3125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0c8500;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #042900;
+
+  cursor: pointer;
+`;
+
+export const CreateAccountLink = styled.a`
+  margin-top: 1.1875rem;
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  text-decoration-line: underline;
+  color: #064800;
+
+  cursor: pointer;
 `;

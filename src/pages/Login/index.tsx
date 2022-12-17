@@ -1,10 +1,12 @@
 import {
-  Input,
-  EmailLabel,
+  InputLabel,
+  InputDiv,
   LoginContainer,
   LoginDiv,
   Title,
-  PasswordLabel,
+  Input,
+  LoginButton,
+  CreateAccountLink,
 } from './styles';
 
 export function Login(): JSX.Element {
@@ -13,13 +15,21 @@ export function Login(): JSX.Element {
       <LoginDiv>
         <Title>Kanban Board</Title>
 
-        <EmailLabel>Email:</EmailLabel>
+        <InputDiv margin_top="2.1875rem">
+          <InputLabel>Email:</InputLabel>
 
-        <Input />
+          <Input />
+        </InputDiv>
 
-        <PasswordLabel>Password:</PasswordLabel>
+        <InputDiv margin_top="0.875rem">
+          <InputLabel>Password:</InputLabel>
 
-        <Input type="password" />
+          <Input type="password" />
+        </InputDiv>
+
+        <LoginButton>Log In</LoginButton>
+
+        <CreateAccountLink>create account</CreateAccountLink>
       </LoginDiv>
     </LoginContainer>
   );
