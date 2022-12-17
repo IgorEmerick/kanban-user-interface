@@ -61,6 +61,7 @@ export const Input = styled.input`
   border-radius: 0.3125rem;
   display: flex;
   align-items: center;
+  background: #ffffff;
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 
