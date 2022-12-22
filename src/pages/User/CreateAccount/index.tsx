@@ -24,15 +24,15 @@ export function CreateAccount(): JSX.Element {
         </InputDiv>
 
         <InputDiv>
-          <FieldLabel>Password:</FieldLabel>
-
-          <Field type="password" />
-        </InputDiv>
-
-        <InputDiv>
           <FieldLabel>Email:</FieldLabel>
 
           <Field />
+        </InputDiv>
+
+        <InputDiv>
+          <FieldLabel>Password:</FieldLabel>
+
+          <Field type="password" />
         </InputDiv>
 
         <CreateAccountButton>Create account</CreateAccountButton>

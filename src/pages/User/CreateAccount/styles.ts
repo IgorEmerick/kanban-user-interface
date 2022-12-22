@@ -15,7 +15,6 @@ export const CreateAccountDiv = styled.div`
 export const Title = styled.h1`
   font-weight: 600;
   font-size: 2rem;
-  line-height: 3rem;
   color: #798d77;
 `;
 
@@ -24,7 +23,6 @@ export const Subtitle = styled.h2`
 
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.875rem;
   color: #798d77;
 `;
 
@@ -44,7 +42,6 @@ export const InputDiv = styled.div<IInputDiv>`
 export const FieldLabel = styled.span`
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.875rem;
   color: #042e00;
 `;
 
@@ -60,7 +57,6 @@ export const Field = styled.input`
 
   font-weight: 400;
   font-size: 0.875rem;
-  line-height: 1.3125rem;
   color: #042900;
 `;
 
@@ -77,7 +73,6 @@ export const CreateAccountButton = styled.button`
 
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.125rem;
   color: #bafab3;
 
   cursor: pointer;

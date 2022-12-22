@@ -8,6 +8,6 @@ export const EmptyContainer = styled.div`
   align-items: center;
   background: #242424;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   font-style: normal;
 `;
