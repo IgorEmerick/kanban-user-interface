@@ -69,11 +69,11 @@ export const CreateAccountButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #043300;
+  background: ${props => (props.disabled ? '#bafab3' : '#043300')};
 
   font-weight: 400;
   font-size: 0.75rem;
-  color: #bafab3;
+  color: ${props => (props.disabled ? '#043300' : '#bafab3')};
 
   cursor: pointer;
 `;
