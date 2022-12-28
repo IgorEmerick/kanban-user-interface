@@ -1,4 +1,7 @@
+import axios from 'axios';
 import { ChangeEvent, useCallback, useState } from 'react';
+import { Navigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import { EmptyContainer } from '../../../Components/EmptyContainer';
 import {
   CreateAccountButton,
@@ -14,6 +17,7 @@ export function CreateAccount(): JSX.Element {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [redirect, setRedirect] = useState(false);
 
   const changeName = useCallback((event: ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
@@ -35,7 +39,29 @@ export function CreateAccount(): JSX.Element {
     return /^[a-zA-Z][a-zA-Z0-9._]*@[a-z]+\.[a-z]+(\.[a-z]+)?$/g.test(email);
   }, [email]);
 
-  return (
+  const createAccount = useCallback(async () => {
+    try {
+      await axios.post(`${process.env.REACT_APP_SERVER_URL}/user`, {
+        email,
+        name,
+        password,
+      });
+
+      Swal.fire('Success!', 'Successfuly created user!', 'success');
+
+      setRedirect(true);
+    } catch (error: any) {
+      Swal.fire(
+        String(error.response.status),
+        error.response.data.message,
+        'error',
+      );
+    }
+  }, [email, name, password]);
+
+  return redirect ? (
+    <Navigate to="/login" />
+  ) : (
     <EmptyContainer>
       <CreateAccountDiv>
         <Title>Kanban Board</Title>
@@ -62,6 +88,7 @@ export function CreateAccount(): JSX.Element {
 
         <CreateAccountButton
           disabled={!checkName() || !checkEmail || password.length === 0}
+          onClick={createAccount}
         >
           Create account
         </CreateAccountButton>
