@@ -3,7 +3,7 @@ A user interface to kanban-board back-end application.
 
 ## Features
 ### User
-- [ ] Create user by name, email and password.
+- [x] Create user by name, email and password.
 
 - Update user.
   - [ ] Should request authentication.
