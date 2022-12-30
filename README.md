@@ -10,7 +10,7 @@ A user interface to kanban-board back-end application.
   - [ ] Should request old password.
   - [ ] Should be able to update all user properties.
 
-- [ ] Authenticate user by email and password.
+- [x] Authenticate user by email and password.
 
 ### Board
 - Create a board by name and owner id.
